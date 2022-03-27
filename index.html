@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dojonary</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <!-- header -->
+  <div class="navbar flex">
+    <div><h1 class="dojo">Dojonary</h1></div>
+    <div><input class="search" type="Search" placeholder="Search"></div>
+    <div>
+      <button class="btn" onclick="myclick(this)">Login</button>
+    </div>
+  </div>
+  <!-- header end -->
+  <!-- tray -->
+  <div class="container flex">
+    <!-- left column -->
+    <div class="column leftc" >
+      <div class="definitionbox flex">
+          <div class="word type">
+            <div class="drop"><h1 class="drop">ninja</h1></div>
+            <div class="drop">noun</div>
+            <div class="drop">Plural: ninjas</div>
+            <div class="drop">
+              <button onclick="alert('Ninja was liked')" class="btn likes">13 likes</button>
+            </div>
+          </div>
+          <div class="definition">
+            <p class="drop">A practitioner skilled in the <a class="drop" href="#">Japanese</a> art of <a class="drop" href="#">ninjutsu</a></p>
+          </div>
+      </div>
+      <div class="definitionbox flex">
+        <div class="word type">
+          <div class="drop"><h1 class="drop">ninja</h1></div>
+          <div class="drop">noun</div>
+          <div class="drop">Plural: ninjas</div>
+          <div class="drop">
+            <button onclick="alert('Ninja was liked')" class="btn likes">37 likes</button>
+          </div>
+        </div>
+        <div class="definition">
+          <p class="drop" >A <a class="drop" href="#">programmer</a> who breaks down problems with <a class="drop" href="#">zen</a>-like focus</p>
+        </div>
+      </div>
+    </div>
+    <!-- left column end -->
+
+    <!-- right column -->
+    <div class="column rightc">
+      <div><p class="buttoncap">Dojonary is defined by YOU </p> </div>
+      <div class="drop">
+        <button onclick="hide(this)" class="adddef btn">Add Definition</button>
+      </div>
+    </div>
+  </div>
+  <!-- tray end -->
+  <script src="./script.js"></script>
+</body>
+</html>
